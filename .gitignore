@@ -10,4 +10,4 @@ depricated/*
 *xlsx
 *csv
 !data/colunms.csv
-
+!analysis_and_results.ipynb
