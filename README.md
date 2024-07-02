@@ -31,10 +31,10 @@ python3 bin/data_loader.py
 Обучение модели 
 ------
 ```bash
-python3 bin/training.py [--name \<model name\>] [--n-proc \<n\>] [--gpu]
+python3 bin/training.py [--name <model name>] [--n-proc <n>] [--gpu]
 ```
 
-По умолчанию `\<model name\>=catboost`
+По умолчанию `<model name>=catboost`
 
 При использовании `--gpu`, рекомендуется указать `--n-proc 1`, иначе может не хватить памяти
 
@@ -46,16 +46,16 @@ python3 bin/training.py [--name \<model name\>] [--n-proc \<n\>] [--gpu]
 ------
 Без проверки на тестовых данных
 ```bash
-python3 bin/final_pipeline.py [--name \<model name or path\>] [--n-proc \<n\>] [--gpu]
+python3 bin/final_pipeline.py [--name <model name or path>] [--n-proc <n>] [--gpu]
 ```
 
 С проверкой на тестовых данных
 ```bash
-python3 bin/final_pipeline.py [--name \<model name or path\>] [--n-proc \<n\>] [--gpu] --test-file data/train_data/train_data_0.pq
+python3 bin/final_pipeline.py [--name <model name or path>] [--n-proc <n>] [--gpu] --test-file data/train_data/train_data_0.pq
 ```
 или с другим файлом
 
-По умолчанию `\<model name\>=catboost`
+По умолчанию `<model name>=catboost`
 
 Опции `--gpu` и `--n-proc` определяют поведение модели при использовании
 
@@ -64,10 +64,10 @@ python3 bin/final_pipeline.py [--name \<model name or path\>] [--n-proc \<n\>] [
 Проверка пайплайна и получение предсказаний
 ------
 ```bash
-python3 bin/check_pipeline.py [--name \<model name or path\>] --input data/train_data/train_data_0.pq --output data/prediction_0.pq
+python3 bin/check_pipeline.py [--name <model name or path>] --input data/train_data/train_data_0.pq --output data/prediction_0.pq
 ```
 
-По умолчанию `\<model name\>=catboost`
+По умолчанию `<model name>=catboost`
 
 Если нужно получить предсказание по нескольким файлам, то надо запускать по очереди, чтобы хватило памяти.
 
