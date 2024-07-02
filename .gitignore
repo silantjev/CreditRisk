@@ -1,0 +1,13 @@
+*__pycache__
+*catboost_info
+*.ipynb_checkpoints
+*ipynb
+*pkl
+*pdf
+logs/*.log
+depricated/*
+*pq
+*xlsx
+*csv
+!data/colunms.csv
+
